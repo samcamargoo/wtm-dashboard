@@ -97,8 +97,8 @@ export const Plans = () => {
 
       {!isMobile() && (
         <div className="flex justify-between flex-wrap px-32 ">
-          {plans.map((plan) => (
-            <PlanCard plan={plan} />
+          {plans.map((plan, index) => (
+            <PlanCard plan={plan} key={index} />
           ))}
         </div>
       )}

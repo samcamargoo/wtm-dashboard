@@ -14,8 +14,8 @@ export const PlanCard = ({ plan }: PlanCardProps) => {
       </div>
       <div className="p-4">
         <ul className="flex flex-col gap-4">
-          {plan.beneficios.map((beneficio) => (
-            <li className="flex items-center gap-2 font-semibold">
+          {plan.beneficios.map((beneficio, index) => (
+            <li className="flex items-center gap-2 font-semibold" key={index}>
               <FaCheck />
               {beneficio}
             </li>
