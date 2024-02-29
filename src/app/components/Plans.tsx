@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import { useState } from "react";
+import { isMobile } from "../services/helper/Helper";
 export interface PlansProps {
   tipo: string;
   beneficios: string[];
@@ -48,12 +49,7 @@ export const Plans = () => {
   const [index, setIndex] = useState(0);
   const currentPlan = plans.at(index);
 
-  const isMobile = (): boolean => {
-    const userAgent = navigator.userAgent;
-    const mobileRegex =
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-    return mobileRegex.test(userAgent);
-  };
+  
 
   const handleNextPlan = () => {
     const lastPlan = index === plans.length - 1;
