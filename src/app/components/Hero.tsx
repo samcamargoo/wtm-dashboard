@@ -20,11 +20,11 @@ export const Hero = () => {
       className={`relative flex items-center justify-center md:justify-normal h-[100dvh] bg-cover bg-center bg-[url('/background.svg')]`}
     >
       {!isAthlet && (
-        <div className="flex flex-col px-32 mt-[96px] gap-6 z-10">
-          <p className="md:text-[64px] text-white max-w-[600px] leading-none font-light">
+        <div className="flex flex-col px-6 md:px-32 mt-[96px] gap-6 z-10">
+          <p className="text-[42px] md:text-[64px] text-white max-w-[600px] md:leading-none font-light">
             VOCÊ PRATICA ALGUM ESPORTE?
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <Button
               className="px-32 py-4 rounded-[20px] bg-[#5B78DD] hover:bg-[#5B78DD]"
               onClick={setCookies}
