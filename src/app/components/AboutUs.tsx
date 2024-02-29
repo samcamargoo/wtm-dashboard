@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Picture from "@/assets/Picture.svg";
+import Founder from "@/assets/.svg";
 import { Button } from "@/components/ui/button";
 
 export const AboutUs = () => {
@@ -22,9 +23,18 @@ export const AboutUs = () => {
             por isso nos dedicamos ao máximo com nossos colegas e parceiros,
             aqui ninguém faz nada sozinho.
           </p>
-          <Button className="bg-[#5B78DD] w-max rounded-[20px] font-bold px-14 text-[24px] hover:bg-[#5B78DD] mt-4">Inscreva-se</Button>
+          <Button className="bg-[#5B78DD] w-max rounded-[20px] font-bold px-14 text-[24px] hover:bg-[#5B78DD] mt-4">
+            Inscreva-se
+          </Button>
         </div>
-        <Image alt="image" src={Picture} className="h-[200px] sm:h-[400px]" />
+
+        <Image
+          alt="rectangle"
+          src={"founder.svg"}
+          height={600}
+          width={600}
+          className="h-[400px] 2xl:h-[600px]"
+        />
       </div>
     </section>
   );
